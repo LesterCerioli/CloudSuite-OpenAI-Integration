@@ -1,0 +1,6 @@
+@CloudSuite.Services.OpenAI.API_HostAddress = http://localhost:5191
+
+GET {{CloudSuite.Services.OpenAI.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
