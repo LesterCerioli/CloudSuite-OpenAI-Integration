@@ -11,7 +11,7 @@ namespace CloudSuite.OpenAI.Modules.Domain.Contracts
     {
         Task<Prompt> GetByText(string text);
 
-        Task<Prompt> GetByMaxTokens(int maxTokens);
+        Task<Prompt> GetByMaxTokens(int? maxTokens);
 
         Task Add(Prompt prompt);
 

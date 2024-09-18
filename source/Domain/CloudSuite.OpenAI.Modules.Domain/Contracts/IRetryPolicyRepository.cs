@@ -9,9 +9,9 @@ namespace CloudSuite.OpenAI.Modules.Domain.Contracts
 {
     public interface IRetryPolicyRepository
     {
-        Task<RetryPolicy> GetByMaxRetryAttempts(int maxRetryAttempts);
+        Task<RetryPolicy> GetByMaxRetryAttempts(int? maxRetryAttempts);
 
-        Task<RetryPolicy> GetByRetryDelayMilliseconds(int retryDelayMilliseconds);
+        Task<RetryPolicy> GetByRetryDelayMilliseconds(int? retryDelayMilliseconds);
 
         Task<IEnumerable<RetryPolicy>> GetAll();    
 
