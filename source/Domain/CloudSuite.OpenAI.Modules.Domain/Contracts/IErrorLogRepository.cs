@@ -11,7 +11,7 @@ namespace CloudSuite.OpenAI.Modules.Domain.Contracts
     {
         Task<ErrorLog> GetByErrorMessage(string errorMessage);
 
-        Task<ErrorLog> GetByTimestamp(DateTime timestamp);
+        Task<ErrorLog> GetByTimestamp(DateTime? timestamp);
 
         Task<IEnumerable<ErrorLog>> GetAll();
 
